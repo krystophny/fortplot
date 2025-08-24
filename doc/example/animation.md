@@ -9,7 +9,7 @@ Creates animated plots and saves to video files with cross-platform support.
 
 ## Source Code
 
-**Fortran:** [save_animation_demo.f90](https://github.com/lazy-fortran/fortplot/blob/main/example/fortran/animation/save_animation_demo.f90)
+🔷 **Fortran:** [save_animation_demo.f90](https://github.com/lazy-fortran/fortplot/blob/main/example/fortran/animation/save_animation_demo.f90)
 
 ```fortran
 program save_animation_demo
@@ -86,7 +86,7 @@ contains
         case (-5)
             print *, "ERROR: Failed to generate animation frames."
         case (-6)
-            print *, " Pipe write failed - enhanced recovery attempted (Issue #186: exponential backoff exhausted)"
+            print *, "✗ Pipe write failed - enhanced recovery attempted (Issue #186: exponential backoff exhausted)"
         case (-7)
             print *, "ERROR: Generated video failed validation. Check ffmpeg version."
         case default

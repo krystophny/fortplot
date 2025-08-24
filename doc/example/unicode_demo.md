@@ -9,7 +9,7 @@ This example demonstrates mathematical symbols and Unicode support in plots.
 
 ## Source Code
 
-**Python:**??? **Fortran:** [unicode_demo.f90](https://github.com/lazy-fortran/fortplot/blob/main/example/fortran/unicode_demo/unicode_demo.f90)
+🔷 **Fortran:** [unicode_demo.f90](https://github.com/lazy-fortran/fortplot/blob/main/example/fortran/unicode_demo/unicode_demo.f90)
 
 ```fortran
 program unicode_demo
@@ -108,7 +108,7 @@ program unicode_demo
 
     ! Create a second figure showing common mathematical expressions
     call figure(figsize=[8.0_wp, 6.0_wp])
-    call title("Common Physics: E = mc^2, \Delta E = h\nu, F = q(E + vx?B)")
+    call title("Common Physics: E = mc², \Delta E = h\nu, F = q(E + v×B)")
     call xlabel("Parameter \xi")
     call ylabel("Observable \Theta")
 
@@ -119,8 +119,8 @@ program unicode_demo
         z(i) = x(i)**2 * exp(-x(i))                         ! Gamma-like
     end do
 
-    call add_plot(x, y, label="Gaussian: \rho(\xi) = e^{-\xi^2/2\sigma^2}/\sqrt{2\pi\sigma^2}")
-    call add_plot(x, z, label="Modified \Gamma: f(\xi) = \xi^2 e^{-\xi}")
+    call add_plot(x, y, label="Gaussian: \rho(\xi) = e^{-\xi²/2\sigma²}/\sqrt{2\pi\sigma²}")
+    call add_plot(x, z, label="Modified \Gamma: f(\xi) = \xi² e^{-\xi}")
     call legend("upper right")
 
     ! Save mathematical examples figure
@@ -136,10 +136,10 @@ end program unicode_demo
 
 ## Features Demonstrated
 
-- **Greek letters**: ?+/-, ?^2, ?^3, ??, ??, ??, ??, ??, ??
-- **Mathematical symbols**:  -> ??,  -> ??,  -> ??,  -> ??,  -> ??,  -> ??
+- **Greek letters**: α, β, γ, δ, π, θ, φ, ψ, ω
+- **Mathematical symbols**: ∞, ∑, ∏, ∫, √, ∂
 - **Subscripts/Superscripts**: Via LaTeX-like syntax
-- **Special characters**:  degrees, +/-,  -> ??,  -> ??,  -> ??
+- **Special characters**: °, ±, ≤, ≥, ≠
 
 ## Unicode Support
 
@@ -149,181 +149,13 @@ end program unicode_demo
 - ASCII backend shows approximations
 
 ### LaTeX-like Commands
-- `\alpha`  -> ?? ?+/-
-- `\beta`  -> ?? ?^2
-- `\pi`  -> ?? ??
-- `\infty`  -> ??  -> ??
-- `\sum`  -> ??  -> ??
+- `\alpha` → α
+- `\beta` → β
+- `\pi` → π
+- `\infty` → ∞
+- `\sum` → ∑
 
 ## Output
-
-### Unicode Demo
-
-![unicode_demo.png](../../media/examples/unicode_demo/unicode_demo.png)
-
-ASCII output:
-```
-%PDF-1.4
-%????
-2 0 obj
-<<
-/Type /Catalog
-/Pages 3 0 R
->>
-endobj
-3 0 obj
-<<
-/Type /Pages
-/Kids [4 0 R]
-/Count 1
->>
-endobj
-4 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/MediaBox [0 0 595.0 842.0]
-/Resources <<
-  /Font <<
-    /F5 5 0 R
-    /F6 6 0 R
-  >>
->>
-/Contents 7 0 R
->>
-endobj
-5 0 obj
-<<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Helvetica
->>
-endobj
-6 0 obj
-<<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Symbol
->>
-endobj
-7 0 obj
-<<
-/Length 23
->>
-stream
-q
-1 w
-1 J
-1 j
-0 0 1 RG
-
-endstream
-endobj
-xref
-0 8
-0000000000 65535 f
-0000000000 00000 n
-0000000013 00000 n
-0000000056 00000 n
-0000000106 00000 n
-0000000244 00000 n
-0000000307 00000 n
-0000000367 00000 n
-trailer
-<<
-/Size 8
-/Root 2 0 R
->>
-startxref
-432
-%%EOF
-```
-
-[Download PDF](../../media/examples/unicode_demo/unicode_demo.pdf                                                                                                                                                                                                                                                )
-
-### Math Examples
-
-![math_examples.png](../../media/examples/unicode_demo/math_examples.png)
-
-ASCII output:
-```
-%PDF-1.4
-%????
-2 0 obj
-<<
-/Type /Catalog
-/Pages 3 0 R
->>
-endobj
-3 0 obj
-<<
-/Type /Pages
-/Kids [4 0 R]
-/Count 1
->>
-endobj
-4 0 obj
-<<
-/Type /Page
-/Parent 3 0 R
-/MediaBox [0 0 595.0 842.0]
-/Resources <<
-  /Font <<
-    /F5 5 0 R
-    /F6 6 0 R
-  >>
->>
-/Contents 7 0 R
->>
-endobj
-5 0 obj
-<<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Helvetica
->>
-endobj
-6 0 obj
-<<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Symbol
->>
-endobj
-7 0 obj
-<<
-/Length 23
->>
-stream
-q
-1 w
-1 J
-1 j
-0 0 1 RG
-
-endstream
-endobj
-xref
-0 8
-0000000000 65535 f
-0000000000 00000 n
-0000000013 00000 n
-0000000056 00000 n
-0000000106 00000 n
-0000000244 00000 n
-0000000307 00000 n
-0000000367 00000 n
-trailer
-<<
-/Size 8
-/Root 2 0 R
->>
-startxref
-432
-%%EOF
-```
-
-[Download PDF](../../media/examples/unicode_demo/math_examples.pdf                                                                                                                                                                                                                                               )
 
 ### Unicode Demo
 ### Math Examples
